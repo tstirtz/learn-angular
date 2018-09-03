@@ -9,15 +9,5 @@
       </div>
     </div>
   </div>
-  <form action="" class="col-3" name="new-note">
-    <div class="form-group">
-        <label for="note-title">Note Title</label>
-        <input class="form-control" name="note-title" type="text" [(ngModel)]="noteTitle">
-    </div>
-    <div class="form-group">
-        <label for="note-content">New Note</label>
-        <textarea class="form-control" name="note-content" cols="30" rows="10" [(ngModel)]="noteContent"></textarea>
-    </div>
-    <button type="button" (click)="addNote()">Create Note</button>
-  </form>
+  <dropdown-component (newNoteCreated)="addNote($event)"></dropdown-component>
 </div>

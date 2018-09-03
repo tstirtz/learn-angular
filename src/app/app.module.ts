@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NotesComponent } from 'src/app/notes/notes.component';
+import { DropDownComponent } from './shared/dropdown.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotesComponent
+    NotesComponent,
+    DropDownComponent
   ],
   imports: [
     BrowserModule,

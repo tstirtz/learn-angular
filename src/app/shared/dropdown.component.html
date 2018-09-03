@@ -1,0 +1,18 @@
+<div class="dropup">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="toggleDropDown()">
+      New Note
+    </button>
+  <div class="dropdown-menu open-dropup dropdown-menu-right" aria-labeledby="dropdownMenu" *ngIf="dropDownRendered">
+    <form action="" name="new-note">
+        <div class="form-group">
+            <label for="note-title">Note Title</label>
+            <input class="form-control" name="note-title" type="text" [(ngModel)]="noteTitle">
+        </div>
+        <div class="form-group">
+            <label for="note-content">New Note</label>
+            <textarea class="form-control" name="note-content" cols="10" rows="5" [(ngModel)]="noteContent"></textarea>
+        </div>
+        <button type="button" (click)="onClick();toggleDropDown()">Create Note</button>
+      </form>
+  </div>
+</div>

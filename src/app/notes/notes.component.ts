@@ -14,20 +14,7 @@ export class NotesComponent{
     },
   ];
   
-  addNote(): void {
-    console.log(this.noteTitle);
-    console.log(this.noteContent);
-    this.notes.push(
-      {
-      "title": this.noteTitle,
-      "content": this.noteContent
-      }
-    );
-    this.clearForm();
-  };
-
-  clearForm(): void {
-    this.noteTitle = "",
-    this.noteContent = ""
+  addNote(note: object): void {
+    this.notes.push(note);
   };
 }

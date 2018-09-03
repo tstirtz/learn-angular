@@ -22,3 +22,14 @@
   overflow-y: scroll;
   background-color: #FFFBDA;
 }
+
+.dropup{
+  position: absolute;
+  bottom: 10px;
+}
+
+.open-dropup{
+  display: block;
+  padding: .5rem;
+  width: 300px;
+}
