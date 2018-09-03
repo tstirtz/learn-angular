@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: 'notes-component',
   templateUrl: './notes.component.html'
 })
 export class NotesComponent{
@@ -9,8 +8,8 @@ export class NotesComponent{
   noteContent: string = "";
   notes: any[] = [
     {
-      "title": "Test Title",
-      "content": "Test content"
+      "title": "Instructions",
+      "content": "Click on 'New Note' in the bottom right hand corner to create a new note"
     },
   ];
   
