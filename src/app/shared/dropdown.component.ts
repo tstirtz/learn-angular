@@ -12,7 +12,6 @@ export class DropDownComponent{
     new EventEmitter<object>();
 
   toggleDropDown(): void{
-    console.log('toggleDropDown')
     this.dropDownRendered = !this.dropDownRendered;
   };
 
