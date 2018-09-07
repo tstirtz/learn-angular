@@ -1,5 +1,6 @@
 @light-yellow: #FFFBDA;
 @yellow: #FFF7B8;
+@grey: #b3b3b3;
 
 .jumbotron{
   width: 80%;
@@ -22,15 +23,30 @@
 }
 
 .card-title{
+  display: inline-block;
   text-align: left;
   font-size: 22px;
   margin: 0px;
 }
 
 .card-header{
+  display: flex;
+  justify-content: space-between;
   background-color: @yellow;
   padding: .75rem 1rem;
+
+  div {
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    color: @grey;
+  }
+
+  div:hover{
+    color: black;
+  }
 }
+
 
 .card-body{
   text-align: left;

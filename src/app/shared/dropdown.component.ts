@@ -8,6 +8,7 @@ export class DropDownComponent{
   noteTitle: string = "";
   noteContent: string = "";
   dropDownRendered: boolean = false;
+  idCounter = 0;
   @Output() newNoteCreated: EventEmitter<object> = 
     new EventEmitter<object>();
 
@@ -16,10 +17,12 @@ export class DropDownComponent{
   };
 
   onClick(): void{
+    this.idCounter += 1;
     this.newNoteCreated.emit(
       {
         "title": this.noteTitle,
-        "content": this.noteContent
+        "content": this.noteContent,
+        "id": this.idCounter
       }
     );
     this.clearForm();

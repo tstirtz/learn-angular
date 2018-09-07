@@ -3,6 +3,7 @@
     <div class="card shadow" *ngFor="let note of notes">
       <div class="card-header">
           <h2 class="card-title">{{ note.title }}</h2>
+          <div id="{{note.id}}" (click)="removeNote($event)" class="fas fa-times"></div>
       </div>
       <div class="card-body">
         <p class="card-text">{{ note.content }}</p>
