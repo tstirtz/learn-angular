@@ -1,1 +1,50 @@
-
+.jumbotron {
+  width: 80%;
+  margin-left: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+}
+.card-title {
+  text-align: left;
+  font-size: 22px;
+  margin: 0px;
+}
+.card-header {
+  background-color: #FFF7B8;
+  padding: 0.75rem 1rem;
+}
+.card-body {
+  text-align: left;
+  overflow-y: scroll;
+  background-color: #FFFBDA;
+  padding: 1rem;
+}
+.dropup {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.open-dropup {
+  display: block;
+  padding: 15px;
+  width: 300px;
+}
+@media screen and (max-width: 346px) {
+  .navbar h1 {
+    font-size: 16px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+}
